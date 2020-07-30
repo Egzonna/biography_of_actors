@@ -26,5 +26,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::put('{id}/update', 'StarsController@update');
     Route::post('create', 'StarsController@store');
     Route::get('{id}/destroy', 'StarsController@destroy')->name('destroy');
+    Route::get('show/{id}', 'StarsController@show')->name('show');
 
 });

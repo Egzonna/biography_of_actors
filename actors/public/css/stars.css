@@ -3,6 +3,7 @@ h2 {
     font-weight: bold;
     border-bottom: 2px solid black;
     width: 207px;
+    color: #60D5C1;
 }
 
 .stars_desc {
@@ -12,7 +13,7 @@ h2 {
 
 img {
     width: 100%;
-    height: 450px;
+    height: 500px;
 }
 
 h5 {
@@ -36,7 +37,7 @@ h5 {
 }
 
 .edit {
-    background-color: lightgray;
+    background-color: #60D5C1;
     color: white;
     border-radius: 10px;
 }

@@ -1,0 +1,29 @@
+h2 {
+    color: #60D5C1;
+}
+
+.buttons {
+    margin-bottom: 10px;
+}
+
+.edit {
+    background-color: #60D5C1;
+    color: white;
+    border-radius: 10px;
+}
+
+.edit:hover {
+    color: white;
+    font-size: 17px;
+}
+
+.delete {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.delete:hover {
+    color: white;
+    font-size: 17px;
+}

@@ -14,6 +14,12 @@ class StarsController extends Controller {
         return view('stars.index', ['stars' => $allStars]);
     }
 
+    public function show($id) {
+
+        $star = Stars::find($id);
+        return view('stars.show', ['star' => $star]);
+    }
+
     public function create() {
         return view('stars.create');
     }
