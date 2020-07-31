@@ -9,13 +9,25 @@ install package :
 
 create env :
 
-`cp .env.exemple .env`
+`cp .env.example .env`
 
 put the value of database in .env.`
 
 put the file `database.sql` in your database to get all the data loaded
 
-### if new project
+generate encryption Key :
+
+`php artisan key:generate`
+
+if images don't show you need to link :
+
+`php artisan storage:link`
+
+start dev server :
+
+`php artisan serve`
+
+### if new project don't need database
 
 make migration to create table :
 
@@ -32,3 +44,4 @@ admin email :
 
 admin password :
 `password`
+
