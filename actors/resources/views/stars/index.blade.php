@@ -8,7 +8,7 @@
             <div class="row">
                 @foreach($stars as $star)
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <a href="{{ route('show', ['id' => $star->id]) }}">
+                        <a class="text-black-50" href="{{ route('show', ['id' => $star->id]) }}">
                             <div class="card card-image stars_desc">
                                 <img src="{{ url("storage/".$star->photo) }}" class="card-img-top" alt="...">
                                 <div class="card-body">

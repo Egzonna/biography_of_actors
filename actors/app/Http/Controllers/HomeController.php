@@ -2,27 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Stars;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
-{
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+class HomeController extends Controller {
 
     /**
-     * Show the application dashboard.
+     * Show the application home page.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('home');
+    public function index() {
+
+        $get_all_stars = Stars::all();
+
+        return view('home', ['stars' => $get_all_stars]);
     }
 }
